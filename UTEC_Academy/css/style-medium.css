@@ -55,6 +55,7 @@
 
 	#one:before {
 		height: 10em;
+		background-position: 0px;
 	}
 
 /* Layers */
@@ -112,4 +113,14 @@
 	#sidePanel {
 		background: #4acaa8;
 		color: #d1f1e9;
+	}
+
+		ul.feature-icons li {
+		
+		width: 40%;
+		margin: 0 0 0.2em 12em;
+	}
+
+		.image1 img{
+		margin-left: -200px;
 	}

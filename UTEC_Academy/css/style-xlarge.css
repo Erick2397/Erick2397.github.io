@@ -10,6 +10,9 @@
 		font-size: 13pt;
 	}
 
+#one:before {
+	background-position: 0px;
+}
 /* Header */
 
 	#header {

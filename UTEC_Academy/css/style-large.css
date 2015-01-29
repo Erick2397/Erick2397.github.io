@@ -10,6 +10,10 @@
 		font-size: 11pt;
 	}
 
+#one:before {
+	background-position: -40px;
+}
+
 /* Header */
 
 	#header {
@@ -20,4 +24,18 @@
 
 	#wrapper {
 		padding-right: 20em;
+	}
+
+		ul.feature-icons{
+			width:1000px;
+	}
+
+		ul.feature-icons li {
+		display: inline-block;
+		width: 28.5%;
+		margin: 0 0 2em 4em;
+	}
+
+		.image1 img{
+		margin-left: -200px;
 	}

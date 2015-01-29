@@ -14,6 +14,11 @@
 		font-size: 12pt;
 	}
 
+
+#one:before {
+	background-position: -50px;
+}
+
 /* List */
 
 	ul.actions {
@@ -49,8 +54,9 @@
 			}
 
 	ul.feature-icons li {
-		display: block;
+		display: inline-block;
 		width: 100%;
+		margin: 0 0 0.2em 3.5em;
 	}
 
 /* Button */
@@ -60,4 +66,8 @@
 	input[type="button"],
 	.button {
 		padding: 0;
+	}
+
+	.image1 img{
+		margin-left: -200px;
 	}

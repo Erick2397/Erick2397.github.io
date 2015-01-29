@@ -97,6 +97,7 @@
 
 	#one:before {
 		height: 7em;
+		background-position: 0px;
 	}
 
 /* Footer */
@@ -128,3 +129,13 @@
 			font-size: 14px;
 			width: 44px;
 		}
+
+		ul.feature-icons li {
+		display: inline-block;
+		width: 100%;
+		margin: 0 0 0.2em 7em;
+	}
+
+		.image1 img{
+		margin-left: -200px;
+	}
