@@ -777,7 +777,7 @@
 			}
 
 		#header > header {
-			padding: 3em;
+			padding: 2em;
 		}
 
 			#header > header .avatar {
@@ -857,7 +857,7 @@
 /* Main */
 
 	#main > section {
-		border-top: dashed; 6px #f4f4f4;
+		border-top: dashed 6px #f4f4f4;
 	}
 
 		#main > section > .container {
@@ -914,3 +914,9 @@
 				#footer .copyright li a {
 					color: inherit;
 				}
+
+
+
+			section :hider{
+
+			}
