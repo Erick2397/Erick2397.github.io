@@ -142,7 +142,9 @@
 	.align-right {
 		text-align: right;
 	}
-
+	a.image1 p{
+	text-align: center;
+}
 /* Section/Article */
 
 	section.special, article.special {
