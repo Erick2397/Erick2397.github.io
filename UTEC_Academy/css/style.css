@@ -526,6 +526,16 @@
 				width: 33%;
 			}
 
+			#two > div ul li a {
+						color: #888 !important;
+						text-decoration: none;
+					}
+
+			#two > div ul li a:hover {
+						border-bottom-color: transparent;
+						color: #4acaa8 !important;
+					}
+
 				ul.feature-icons li:before {
 					-moz-osx-font-smoothing: grayscale;
 					-webkit-font-smoothing: antialiased;
@@ -553,6 +563,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			padding-top: 0;
 		}
 
 			ul.icons li {
@@ -920,3 +931,60 @@
 			section :hider{
 
 			}
+
+
+			#two .item.thumb
+			{
+				display: inline-block;
+				position: relative;
+				background: #1a1f2c;
+				background: rgba(255,255,255,0.25);
+				cursor: default;
+				width: 250px;
+			}
+			
+				#two .item.thumb h2
+				{
+					position: absolute;
+					float:top;
+					bottom: 0;
+					left: 0;
+					background: #1a1f2c;
+					background: rgba(18,21,29,0.85);
+					width: 100%;
+					height:40px;
+					padding: 0.2em;
+					font-weight: 100;
+					line-height: 2em;
+					z-index: 2;
+					font-size: 15px;
+					margin-bottom: 10px;
+					color: whitesmoke;
+				}
+
+				#two .item.thumb h2:hover
+				{
+						border-bottom-color: transparent;
+						color: #4acaa8 !important;
+				}
+				
+				#two .item.thumb img
+				{
+					display: inline-block;
+					z-index: 1;
+					width: 250px;
+					height:186px;
+
+				}
+
+				table thead tr th{
+					font-size: 15px;
+					text-align: center;
+					padding: 0 0 0 0;
+				}
+
+				table tbody tr th{
+					font-size: 15px;
+					text-align: center;
+					padding: 0 0 0 0;
+				}
