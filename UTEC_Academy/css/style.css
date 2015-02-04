@@ -187,6 +187,13 @@
 			margin-top: -0.75em;
 		}
 
+		iframe{
+			 width: 700px;
+   			 height: 350px;
+   			 margin: 0 auto;
+   			 display:block;
+		}
+
 /* Form */
 
 	form {
