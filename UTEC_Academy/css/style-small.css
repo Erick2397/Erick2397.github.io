@@ -26,6 +26,14 @@
 		font-size: 1em;
 	}
 
+iframe{
+	max-width: 548px !important;
+	max-height:320px !important;
+	width: 100%;
+	min-height: 180px;
+	min-width: 415px;
+}
+
 /* Image */
 
 	.image.left {

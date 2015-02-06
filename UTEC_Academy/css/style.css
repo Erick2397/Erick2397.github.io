@@ -444,8 +444,8 @@
 		}
 
 /* Image */
-
-	.image {
+	
+		.image {
 		border-radius: 5px;
 		border: 0;
 		display: inline-block;
@@ -875,6 +875,12 @@
 	}
 
 /* Main */
+
+	iframe{
+		min-height: 450px;
+		min-width: 750px;
+	}
+
 
 	#main > section {
 		border-top: dashed 6px #f4f4f4;

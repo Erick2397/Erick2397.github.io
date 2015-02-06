@@ -10,6 +10,12 @@
 		font-size: 12pt;
 	}
 
+	iframe{
+		max-width: 80%;
+		max-height:500px;
+		width: 100%;
+	}
+
 /* Image */
 
 	.image.left, .image.right {

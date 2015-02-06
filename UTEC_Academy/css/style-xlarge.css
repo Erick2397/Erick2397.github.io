@@ -10,6 +10,11 @@
 		font-size: 13pt;
 	}
 
+	iframe{
+		min-height: 380px;
+		min-width: 615px;
+		}
+
 #one:before {
 	background-position: 0px;
 }
