@@ -6,24 +6,54 @@
 -->
 <html>
 	<head>
-		<title>UTEC Academy</title>
+		<title>Erickson Sandoval</title>
         <link rel="shortcut icon" href="images/icono.ico">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/style_gal.css" />
+		<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.scrollzer.min.js"></script>
 		<script src="js/jquery.scrolly.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/gal/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/gal/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/gal/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="js/gal/gallery.js"></script>
 		<noscript>
 
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
+			 <style>
+				.es-carousel ul{
+					display:block;
+				}
+			</style>
 		</noscript>
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+						<a href="#" class="rg-image-nav-prev">Previous Image</a>
+						<a href="#" class="rg-image-nav-next">Next Image</a>
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
@@ -32,9 +62,11 @@
 			<!-- Header -->
 				<section id="header" class="skel-layers-fixed">
 					<header>
-						<span class="image avatar"><img src="images/perfil.jpg" alt="" /></span>
+						<a style="float:right; margin-top:-5px; margin-left:10px" href="https://www.facebook.com/ericksch23" target="blank" class="icon fa-facebook"><span class="label">Facebook</span></a><a style="float:right; margin-top:-5px;" href="https://github.com/Erick2397" target="blank" class="icon fa-github"><span class="label">Github</span></a></li>
+							
+						<span class="image avatar" ><img src="images/perfil.jpg" alt="" /></span>
 						
-						<p style="margin-top:-20px;">Estudiante del tercer ciclo en Ingeniería Industrial -UTEC</p>
+						<p style="margin-top:-20px;">Estudiante del tercer ciclo en Ingeniería Industrial - UTEC</p>
 					</header>
 					<nav id="nav">
 						<ul>
@@ -44,12 +76,6 @@
 							<li><a href="#four">Acerca de mí</a></li>
 						</ul>
 					</nav>
-					<footer>
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/ericksch23" target="blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://github.com/Erick2397" target="blank" class="icon fa-github"><span class="label">Github</span></a></li>
-						</ul>
-					</footer>
 				</section>
 
 			<!-- Main -->
@@ -64,6 +90,7 @@
 								</header>
 								<p style="text-align:justify;">Este sitio ha sido creado con el objetivo de ordenar sistematicamente las tareas, asignaciones y proyectos desarrollados, en cada uno de los cursos durante el presente ciclo de estudios en la Universidad de Ingeniería y Tecnología (UTEC) en Lima, Perú.</p>
 							</div>
+
 						</section>
 
 					<!-- Two -->
@@ -72,14 +99,15 @@
 								<h3>Cursos del 2015 - I</h3>
 								<p>A continuación se presentan los cursos del presente ciclo:</p>
 								<ul class="feature-icons">
-									<li class="fa-users"><a href="1.Investigacion_de_Operaciones.html">Investigación de Operaciones</a></li>
-									<li class="fa-cubes"><a href="">Ecuaciones Diferenciales</a></li>
-									<li class="fa-coffee"><a href="">Ciencia de los Materiales</a></li>
+									<li class="fa-users"><a href="1.Investigacion_de_Operaciones_I.html">Investigación de Operaciones I</a></li>
+									<li class="fa-cubes">Ecuaciones Diferenciales</li>
+									<li class="fa-coffee">Ciencia de los Materiales</li>
 									<li class="fa-bolt">Electricidad y Magnetismo</li>
 									<li class="fa-book">Inglés II</li>
-									<li class="fa-code">Taller de arte generativo</li>
+									<li class="fa-code">Arte generativo</li>
 								</ul>
 							</div>
+
 						</section>
 
 					<!-- Three -->
@@ -89,24 +117,24 @@
 								<p style="text-align: justify;">El presente proyecto se encuentra en proceso con la colaboración de alumnos y profesores pertenecientes al Institute Masachussets Institute of Technology (MIT). Se tiene como objetivo solucionar el problema del frío extremo en las zonas altoandinas mediante la utilización de la radiación solar como recurso para el calentamiento de viviendas. Para optimizar este proceso de calentamiento se utilizarán extractores posicionados estrategicamente según la localización geográfica de cada establecimiento y en base a las necesidades de cada usuario.</p>
 								<div class="features">
 									<article>
-										<a class="image"><img src="images/b1.jpg" alt="" /></a>
+										<a class="image"><img src="images/casa.jpg" alt="" /></a>
 										<div class="inner">
 											<h4>Identificación con el usuario</h4>
 											<p style="text-align: justify;">El usuario se sentirá identificado con la solución planteada debido a que el prototipo será construido de manera colaborativa en el lugar de origen (Quehue - Cuzco) y se utilizarán métodos y/o herramientas propios de la zona.</p>
 										</div>
 									</article>
 									<article>
-										<a class="image"><img src="images/b2.jpg" alt="" /></a>
+										<a class="image"><img src="images/sol.jpg" alt="" /></a>
 										<div class="inner">
 											<h4>Autónomo y ecológico</h4>
 											<p style="text-align: justify;">El proyecto Passive Heating utiliza como fuente de energía a una del tipo renovable: radiación solar. De esta manera se muestra amigable con el ambiente.</p>
 										</div>
 									</article>
 									<article>
-										<a class="image"><img src="images/b3.jpg" alt="" /></a>
+										<a class="image"><img src="images/casa-ichu.jpg" alt="" /></a>
 										<div class="inner">
 											<h4>Bajo costo de elaboración</h4>
-											<p style="text-align: justify;">La construcción del prototipo en general está elaborado con material reciclado y los costos de fabricación se centran solo en el vidrio utilizado para mejorar la captación del calor.</p>
+											<p style="text-align: justify;">La construcción del prototipo en general está elaborado con materiales de bajo costo: adobe, ichu, etc; la única inversión se centra solo en los extractores utilizados para mejorar la circulación del aire caliente.</p>
 										</div>
 									</article>
 								</div>
@@ -115,11 +143,43 @@
 
 					<!-- Four -->
 						<section id="four" style="background-color:#f4f4f4">
-							<div class="container">
+							<div class="container" style="padding-bottom:0px">
 								<h3>Erickson Jesús Sandoval Chirito</h3>
-								<p style="text-align: justify;">Nací y crecí en Lima, Perú. Estudié mi educación secundaria en el Colegio Mayor Secundario Presidente del Perú y actualmente estudío Ingeniería Industrial en la Universidad de Ingeniería y Tecnología (UTEC). En cuanto mi trabajo en realización de proyectos, este se encuentra relacionado a temas de programación, electrónica, química, matemática y energía.</p>
-								<a class="image1h"><p><img src="images/erick.jpg" alt=""/></p></a>
+								<p style="text-align: justify;">Nací y crecí en Lima, Perú. Estudié mi educación secundaria en el Colegio Mayor Secundario Presidente del Perú, donde también obtuve el Bachillerato Internacional, y actualmente estudío Ingeniería Industrial en la Universidad de Ingeniería y Tecnología (UTEC). En cuanto mi trabajo en realización de proyectos, este se encuentra relacionado a temas de programación, arte, electrónica, química, matemática y energía.</p>
+								
+								</div>
+<div class="container" style="width:100%; max-width:800px; margin:auto; padding-bottom:0px; padding-top:0px">
+			<div class="content">
+				<div id="rg-gallery" class="rg-gallery">
+					<div class="rg-thumbs" style="height:100px">
+						<!-- Elastislide Carousel Thumbnail Viewer -->
+						<div class="es-carousel-wrapper" style="height:80px">
+							
+							<div class="es-carousel" style="height:50px">
+								<ul>
+									<li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/1.jpg" alt="image01" data-description="Visita guiada al Museo de Arte Contemporáneo (MAC)" /></a></li>
+									<li><a href="#"><img src="images/thumbs/2.jpg" data-large="images/2.jpg" alt="image02" data-description="Participación en el XXXI Congreso Latinoamericano de Química como ponente de proyecto" /></a></li>
+									<li><a href="#"><img src="images/thumbs/3.jpg" data-large="images/3.jpg" alt="image03" data-description="Póster del proyecto realizado durante el primer ciclo y presentado al XXXI CLAQ" /></a></li>
+									<li><a href="#"><img src="images/thumbs/4.jpg" data-large="images/4.jpg" alt="image04" data-description="Testeo de aplicación móvil de realidad aumentada como proyecto de segundo ciclo" /></a></li>
+									<li><a href="#"><img src="images/thumbs/5.jpg" data-large="images/5.jpg" alt="image05" data-description="Proyecto del curso de Arte y Tecnología - Persistent of Vision" /></a></li>
+									<li><a href="#"><img src="images/thumbs/6.jpg" data-large="images/6.jpg" alt="image06" data-description="Corte láser de acrílico durante el curso del UTEC Academy" /></a></li>
+									<li><a href="#"><img src="images/thumbs/7.jpg" data-large="images/7.jpg" alt="image07" data-description="Plancha de acrílico de la tarea de fabricación digital" /></a></li>
+									<li><a href="#"><img src="images/thumbs/8.jpg" data-large="images/8.jpg" alt="image08" data-description="Producto final de la tarea de fabricación digital" /></a></li>
+									<li><a href="#"><img src="images/thumbs/9.jpg" data-large="images/9.jpg" alt="image09" data-description="Viaje a Quehue-Cuzco para recopilación de información para el proyecto en curso" /></a></li>
+									<li><a href="#"><img src="images/thumbs/10.jpg" data-large="images/10.jpg" alt="image10" data-description="Grupo UTEC-MIT 2015" /></a></li>
+									<li><a href="#"><img src="images/thumbs/11.jpg" data-large="images/11.jpg" alt="image11" data-description="El puente Queswachaka en Quehue, ingeniería de nuestros antepasados" /></a></li>
+									<li><a href="#"><img src="images/thumbs/12.jpg" data-large="images/12.jpg" alt="image12" data-description="Visita al Instituto Tecnológico de Massachusetts (MIT)" /></a></li>
+									<li><a href="#"><img src="images/thumbs/13.jpg" data-large="images/13.jpg" alt="image13" data-description="The Great Dome (La Gran Cúpula) en MIT" /></a></li>
+								</ul>
 							</div>
+						</div>
+						<!-- End Elastislide Carousel Thumbnail Viewer -->
+					</div><!-- rg-thumbs -->
+				</div><!-- rg-gallery -->
+				</div><!-- content -->
+		</div><!-- container -->
+
+
 						</section>
 
 						

@@ -11,11 +11,16 @@
 	}
 
 	iframe{
-		max-width: 80%;
-		max-height:500px;
-		width: 100%;
+		
 	}
 
+.image iframe{
+
+		height: 250px !important;
+		width: 100% !important;
+	}
+
+	
 /* Image */
 
 	.image.left, .image.right {

@@ -11,9 +11,14 @@
 	}
 
 	iframe{
-		min-height: 380px;
-		min-width: 615px;
+		
 		}
+
+		.image iframe{
+
+		height: 250px !important;
+		width: 370px !important;
+	}
 
 #one:before {
 	background-position: 0px;

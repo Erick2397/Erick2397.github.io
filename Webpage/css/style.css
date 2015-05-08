@@ -502,6 +502,12 @@
 				width: 100%;
 			}
 
+					.image iframe{
+
+		width: 450px;
+		height: 290px;
+	}
+
 /* List */
 
 	ul {
@@ -888,8 +894,7 @@
 /* Main */
 
 	iframe{
-		min-height: 450px;
-		min-width: 750px;
+		
 	}
 
 

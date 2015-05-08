@@ -34,6 +34,12 @@ iframe{
 	min-width: 415px;
 }
 
+.image iframe{
+
+		height: 450px !important;
+		width: 100% !important;
+	}
+
 /* Image */
 
 	.image.left {

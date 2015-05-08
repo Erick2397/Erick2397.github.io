@@ -11,10 +11,15 @@
 	}
 
 	iframe{
-		max-width: 100%;
-		width: 100%;
+		
 		
 		}
+
+.image iframe{
+
+		height: 200px !important;
+		width: 290px !important;
+	}
 
 #one:before {
 	background-position: -40px;
